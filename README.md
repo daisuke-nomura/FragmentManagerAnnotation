@@ -34,6 +34,6 @@ Or all Fragments in FragmentManager.
 and
 
 	dependencies {
-	        compile 'com.github.daisuke-nomura:FragmentManagerAnnotation:0.1.0'
+        compile 'com.github.daisuke-nomura:FragmentManagerAnnotation:0.2.0'
 	}
 
