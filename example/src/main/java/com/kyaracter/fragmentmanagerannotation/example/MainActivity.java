@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.kyaracter.fragmentmanagerannotation.library.LookFragmentManager;
+import com.kyaracter.fragmentmanagerannotation.library.LookupFragmentManager;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         //throw IllegalArgumentException due to MainFragment with SupportChildFragmentManager annotation
-        LookFragmentManager.supportFragmentManager(this, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
+        LookupFragmentManager.supportFragmentManager(this, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
     }
 }

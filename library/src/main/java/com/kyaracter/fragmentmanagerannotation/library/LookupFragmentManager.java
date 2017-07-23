@@ -16,7 +16,7 @@ import java.lang.annotation.Annotation;
 import java.util.List;
 
 
-public class LookFragmentManager {
+public class LookupFragmentManager {
 
     public static void frameworkFragmentManager(@NonNull Activity activity, @IdRes int resId) {
         Annotation[] annoations = activity.getFragmentManager()

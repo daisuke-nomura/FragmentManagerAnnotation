@@ -5,7 +5,7 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.kyaracter.fragmentmanagerannotation.library.LookFragmentManager;
+import com.kyaracter.fragmentmanagerannotation.library.LookupFragmentManager;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -36,14 +36,14 @@ public class ExampleInstrumentedTest {
     @Test
     public void supportFragmentManagerTest() throws RuntimeException {
         MainActivity mainActivity = mActivityRule.launchActivity(null);
-        LookFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
+        LookupFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
         onView(withText("Hello World!"));
     }
 
     @Test
     public void supportChildFragmentManagerTest() throws RuntimeException {
         MainActivity mainActivity = mActivityRule.launchActivity(null);
-        LookFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
+        LookupFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
         onView(withText("Hello World!"));
     }
 }

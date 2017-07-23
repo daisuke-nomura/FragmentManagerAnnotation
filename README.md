@@ -10,10 +10,19 @@ Add an annotation to Fragment indicating which FragmentManager to use.
     public class MainFragment extends Fragment {
 
 Confirm whether Fragment is added to correct FragmentManger.
+Checks with specified id.
 
     //throw IllegalArgumentException due to MainFragment with SupportChildFragmentManager annotation
-    LookFragmentManager.supportFragmentManager(this, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
-    
+    LookupFragmentManager.supportFragmentManager(this, R.id.fragment);
+
+Or specified tag.
+
+    LookupFragmentManager.supportFragmentManager(this, "tag");
+
+Or all Fragments in FragmentManager.
+
+    LookupFragmentManager.supportFragmentManager(this);
+
 ## Binaries
 
     allprojects {
