@@ -11,8 +11,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -34,16 +32,12 @@ public class ExampleInstrumentedTest {
     }
 
     @Test
-    public void supportFragmentManagerTest() throws RuntimeException {
-        MainActivity mainActivity = mActivityRule.launchActivity(null);
-        LookupFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
-        onView(withText("Hello World!"));
+    public void supportFragmentManagerTest() {
+        LookupFragmentManager.supportFragmentManager(mActivityRule.getActivity(), com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
     }
 
     @Test
-    public void supportChildFragmentManagerTest() throws RuntimeException {
-        MainActivity mainActivity = mActivityRule.launchActivity(null);
-        LookupFragmentManager.supportFragmentManager(mainActivity, com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
-        onView(withText("Hello World!"));
+    public void frameworkFragmentManagerTest() {
+        LookupFragmentManager.frameworkFragmentManager(mActivityRule.getActivity(), com.kyaracter.fragmentmanagerannotation.example.R.id.fragment);
     }
 }
