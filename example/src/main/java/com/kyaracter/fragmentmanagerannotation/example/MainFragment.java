@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.kyaracter.fragmentmanagerannotation.annotation.SupportChildFragmentManager;
+import com.kyaracter.fragmentmanagerannotation.annotation.SupportFragmentManager;
 
-@SupportChildFragmentManager
+@SupportFragmentManager
 public class MainFragment extends Fragment {
 
     public MainFragment() {
